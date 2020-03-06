@@ -4,7 +4,7 @@ let z;
 let op = 0;
 let re=0;
 let dot=0;
-let se = 99 ;
+let se = 1 ;
 function mal(){
     op=1;
     re=1;
@@ -23,20 +23,19 @@ function minuss(){
    re=1;
 }
 function eins(){
-    
-
-
 
     if ( re==0 ){
         x= x + "1" ;
-        
+        se=x.search("0");
+        (se==0) ? x = x.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=x;
     }
     else {
         y= y + "1";
+        se=y.search("0");
+        (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
-    
     // se=x.search("0");
     // console.log(se);
     // console.log(x);
@@ -49,10 +48,14 @@ function eins(){
 function zwei(){
     if (re==0 ){
         x= x + "2";
+        se=x.search("0");
+        (se==0) ? x = x.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=x;
     }
     else {
         y=y + "2";
+                se=y.search("0");
+        (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
 
@@ -62,10 +65,14 @@ function drei(){
   
     if (re==0 ){
         x=x + "3";
+        se=x.search("0");
+        (se==0) ? x = x.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=x;
     }
     else {
         y= y + "3";
+                se=y.search("0");
+        (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
 }
@@ -73,10 +80,14 @@ function vier(){
   
     if (re==0){
         x= x + "4" ;
+        se=x.search("0");
+        (se==0) ? x = x.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=x;
     }
     else {
         y= y + "4";
+                se=y.search("0");
+        (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
 }
@@ -84,10 +95,14 @@ function fünf(){
   
     if (re==0){
         x= x + "5" ;
+        se=x.search("0");
+        (se==0) ? x = x.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=x;
     }
     else {
         y= y + "5";
+                se=y.search("0");
+        (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
 }
@@ -95,10 +110,14 @@ function sechs(){
   
     if (re==0){
         x= x + "6" ;
+        se=x.search("0");
+        (se==0) ? x = x.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=x;
     }
     else {
         y= y + "6";
+                se=y.search("0");
+        (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
 }
@@ -106,10 +125,14 @@ function sieben(){
   
     if (re==0){
         x= x + "7" ;
+        se=x.search("0");
+        (se==0) ? x = x.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=x;
     }
     else {
         y= y + "7";
+                se=y.search("0");
+        (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
 }
@@ -117,10 +140,14 @@ function acht(){
   
     if (re==0){
         x= x + "8" ;
+        se=x.search("0");
+        (se==0) ? x = x.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=x;
     }
     else {
         y= y + "8";
+                se=y.search("0");
+        (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
 }
@@ -128,10 +155,14 @@ function neun(){
   
     if (re==0){
         x= x + "9" ;
+                se=x.search("0");
+        (se==0) ? x = x.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=x;
     }
     else {
         y= y + "9";
+                se=y.search("0");
+        (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
 }
