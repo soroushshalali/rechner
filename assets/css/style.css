@@ -1,14 +1,15 @@
 body{
     font-size: 32px;
+    
 }
 *{
     font-size: 32px; 
     border: none;
     outline: none;
-    
+    color: white;
 }
-
 div{
+    
     width: 20%;
     height: 30vh;
     display: grid;
@@ -23,22 +24,45 @@ article{
     grid-template-columns: repeat(4,1fr);
     
 }
-
 article > button{
-    background-color: rgb(131, 201, 19);
+    background-color: rgb(117, 112, 107);
 }
 .gleich{
     grid-column: 4/5;
-    grid-row: 1/-1;
-    background-color: rgb(131, 201, 19);
+    grid-row: 2/-1;
+    background-color: rgb(117, 112, 107);
+}
+ .sound{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: rgb(35, 54, 0);
+    position: relative;
+}
+
+.tooltip{
+    position: absolute;
+    right: -60%;
+    font-size: 0.5em;
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+}
+
+.sound:hover .tooltip{
+    visibility: visible;
+    
+    
 }
 div > button{
-    background-color: rgba(0, 0, 255, 0.274);
+    background-color: rgba(140, 136, 132);
 }
 button{
     width: 90%;
     margin: 3px;
-    box-shadow: 0px 0px 2px rgb(0, 0, 0);
+    box-shadow: 0px 0px 2px rgb(140, 136, 102);
 }
 button:hover{
     background-color: rgb(232, 248, 89);
@@ -47,6 +71,11 @@ button:active{
     background-color: rgb(13, 218, 132);
 }
 h1{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20%;
     text-align: center;
+    background-color: rgb(103, 98, 93);
 }

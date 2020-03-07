@@ -5,22 +5,59 @@ let op = 0;
 let re=0;
 let dot=0;
 let se = 1 ;
+let vol , vol1 , vol2;
+let volco=1 ;
+
+function sound(){
+    vol= document.getElementById("a-16");
+    vol1=document.getElementById("a-28");
+    vol2=document.getElementById("a-17");
+    if (volco == 1 ){
+        vol.volume=0;
+        vol1.volume=0;
+        vol2.volume=0;
+        volco=0;
+        // document.getElementById("souoff").style.visibility="visible";
+        // document.getElementById("souon").style.visibility="collapse";
+        document.getElementById("souoff").style.display="none";
+        document.getElementById("souon").style.display="block";
+    }
+     else{
+        vol.volume=1;
+        vol1.volume=1;
+        vol2.volume=1;
+        volco=1;
+        // document.getElementById("souon").style.visibility="visible";
+        // document.getElementById("souoff").style.visibility="collapse";
+        document.getElementById("souoff").style.display="block";
+        document.getElementById("souon").style.display="none";
+        
+     }
+}
 function mal(){
     op=1;
     re=1;
+    document.getElementById("a-28").play();
+    document.getElementById("a-28").currentTime=0;
    
 }
 function teil(){
    op=2;
    re=1;
+       document.getElementById("a-28").play();
+    document.getElementById("a-28").currentTime=0;
 }
 function pluss(){
    op=3;
    re=1;
+       document.getElementById("a-28").play();
+    document.getElementById("a-28").currentTime=0;
 }
 function minuss(){
    op=4;
    re=1;
+       document.getElementById("a-28").play();
+    document.getElementById("a-28").currentTime=0;
 }
 function eins(){
 
@@ -36,6 +73,8 @@ function eins(){
         (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
+    document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
     // se=x.search("0");
     // console.log(se);
     // console.log(x);
@@ -60,6 +99,8 @@ function zwei(){
     }
 
     
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function drei(){
   
@@ -75,6 +116,8 @@ function drei(){
         (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function vier(){
   
@@ -90,6 +133,8 @@ function vier(){
         (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function fünf(){
   
@@ -105,6 +150,8 @@ function fünf(){
         (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function sechs(){
   
@@ -120,6 +167,8 @@ function sechs(){
         (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function sieben(){
   
@@ -135,6 +184,8 @@ function sieben(){
         (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function acht(){
   
@@ -150,6 +201,8 @@ function acht(){
         (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function neun(){
   
@@ -165,6 +218,8 @@ function neun(){
         (se==0) ? y = y.slice(1) : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function nuull(){
   
@@ -179,6 +234,8 @@ function nuull(){
         (y==0) ? y=0 : "" ;
         document.getElementById("monitor").innerHTML=y;
     }
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function punkt(){
     dot=1;
@@ -190,6 +247,8 @@ function punkt(){
         y= y + ".";
         document.getElementById("monitor").innerHTML=y;
     }
+        document.getElementById("a-16").play();
+    document.getElementById("a-16").currentTime=0;
 }
 function macht(){
     console.log(x);
@@ -219,6 +278,8 @@ function macht(){
     y=0;
     re=0;
     z=0;
+    document.getElementById("a-17").play();
+    document.getElementById("a-17").currentTime=0;
 }
  function cle(){
     document.getElementById("monitor").innerHTML="0";

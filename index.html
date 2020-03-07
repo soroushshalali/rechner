@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7b691a6b0e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
     <section>
         <h1 id="monitor" >0</h1>
         <article>
@@ -33,19 +33,23 @@
         <button onclick="neun()"  >9</button>
         <button onclick="punkt()" >.</button>
         <button onclick="nuull()"  >0</button>
-        
+        <button id="souon"  class="sound"  onclick="sound()" ><i class="fas fa-volume-up"></i>
+        <span class="tooltip" >On</span>
+        </button>
+        <button id="souoff"  class="sound"  onclick="sound()" ><i class="fas fa-volume-mute"></i>
+            <span class="tooltip" >Off</span>
+        </button>
+
         
         
         
         <button onclick="cle()"   >C</button>
     </div>
     </section>
-
-
-
-    <audio src="assets/audio/button-16.mp3"></audio>
-    <audio src="assets/audio/button-17.mp3"></audio>
-    <audio src="assets/audio/button-28.mp3"></audio>
+    <audio  id="a-16" src="assets/audio/button-16.mp3"></audio>
+    <audio id="a-17" src="assets/audio/button-17.mp3"></audio>
+    <audio id="a-28" src="assets/audio/button-28.mp3"></audio>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
