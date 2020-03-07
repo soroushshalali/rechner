@@ -7,7 +7,99 @@ let dot=0;
 let se = 1 ;
 let vol , vol1 , vol2;
 let volco=1 ;
+let asciicode;
+function keyfun(){
+    asciicode=event.keyCode;
+    console.log(asciicode);
 
+    switch (asciicode){
+        case 49:
+            eins()
+            break;
+
+        case 50:
+            zwei()
+            break;
+
+        case 51:
+            drei()
+            break;
+
+        case 52:
+            vier()
+            break;
+
+        case 53:
+            fünf()
+            break;
+    
+        case 54:
+            sechs()
+            break;
+    
+        case 55:
+            sieben()
+            break;
+    
+        case 56:
+            acht()
+            break;
+
+        case 57:
+            neun()
+            break;
+    
+        case 48:
+            nuull()
+            break;
+        case 46:
+            punkt()
+            break;
+
+        case 42:
+            mal()
+            break;
+        case 43:
+            pluss()
+            break;
+        
+        case 47:
+            teil()
+            break;  
+
+        case 45:
+            minuss()
+            break;
+        case 13:
+            macht()
+            break;
+        case 32:
+            macht()
+            break;
+
+        case 99:
+            cle();
+            break;
+
+        case 67:
+            cle();
+            break;
+
+        case 115:
+            sound();
+            break;
+
+        case 83:
+            sound();
+            break;
+
+
+
+
+
+    }
+
+}
 function sound(){
     vol= document.getElementById("a-16");
     vol1=document.getElementById("a-28");

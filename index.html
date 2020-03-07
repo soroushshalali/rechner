@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body onkeypress="keyfun()" >
     <section>
         <h1 id="monitor" >0</h1>
         <article>
@@ -31,10 +31,10 @@
             <button onclick="punkt()" >.</button>
             <button onclick="nuull()"  >0</button>
             <button id="souon"  class="sound"  onclick="sound()" ><i class="fas fa-volume-up"></i>
-                <span class="tooltip" >On</span>
+                <span class="tooltip" >On (s)</span>
             </button>
             <button id="souoff"  class="sound"  onclick="sound()" ><i class="fas fa-volume-mute"></i>
-                <span class="tooltip" >Off</span>
+                <span class="tooltip" >Off (s)</span>
             </button>
             <button onclick="cle()"   >C</button>
         </div>
