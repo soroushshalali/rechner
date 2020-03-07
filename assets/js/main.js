@@ -36,26 +36,34 @@ function sound(){
 }
 function mal(){
     op=1;
-    re=1;
+    (x!=0) ? re=1 : "";
+    if (x != 0 && y != 0){
+        macht();
+    }
+
+
+
+
+
     document.getElementById("a-28").play();
     document.getElementById("a-28").currentTime=0;
    
 }
 function teil(){
    op=2;
-   re=1;
+   (x!=0) ? re=1 : "";
        document.getElementById("a-28").play();
     document.getElementById("a-28").currentTime=0;
 }
 function pluss(){
    op=3;
-   re=1;
+   (x!=0) ? re=1 : "";
        document.getElementById("a-28").play();
     document.getElementById("a-28").currentTime=0;
 }
 function minuss(){
    op=4;
-   re=1;
+   (x!=0) ? re=1 : "";
        document.getElementById("a-28").play();
     document.getElementById("a-28").currentTime=0;
 }
@@ -75,14 +83,6 @@ function eins(){
     }
     document.getElementById("a-16").play();
     document.getElementById("a-16").currentTime=0;
-    // se=x.search("0");
-    // console.log(se);
-    // console.log(x);
-    // if (se == 0){
-    //     x = x.slice(1);
-    // }
-
-     
 }
 function zwei(){
     if (re==0 ){
