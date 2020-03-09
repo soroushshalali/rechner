@@ -133,10 +133,6 @@ function mal(){
         macht();
     }
 
-
-
-
-
     document.getElementById("a-28").play();
     document.getElementById("a-28").currentTime=0;
    
@@ -144,18 +140,33 @@ function mal(){
 function teil(){
    op=2;
    (x!=0) ? re=1 : "";
+   if (x != 0 && y != 0){
+    macht();
+}
+
+   
        document.getElementById("a-28").play();
     document.getElementById("a-28").currentTime=0;
 }
 function pluss(){
    op=3;
    (x!=0) ? re=1 : "";
+   if (x != 0 && y != 0){
+    macht();
+}
+
+
        document.getElementById("a-28").play();
     document.getElementById("a-28").currentTime=0;
 }
 function minuss(){
    op=4;
    (x!=0) ? re=1 : "";
+   if (x != 0 && y != 0){
+    macht();
+}
+
+   
        document.getElementById("a-28").play();
     document.getElementById("a-28").currentTime=0;
 }
@@ -343,9 +354,6 @@ function punkt(){
     document.getElementById("a-16").currentTime=0;
 }
 function macht(){
-    console.log(x);
-    console.log(y);
-
     x=parseFloat(x);
     y=parseFloat(y);
     

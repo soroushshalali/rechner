@@ -35,7 +35,6 @@ article > button{
     grid-row: 2/-1;
     background-color: #455986;
 }
-
 .tooltip{
     position: absolute;
     right: -60%;
@@ -83,7 +82,7 @@ h1{
     align-items: center;
     width: 20%;
     text-align: center;
-    background-color: #eeedec;
+    background-color: #aca9a6;
     margin-bottom: 1vh;
 }
 .fas{
